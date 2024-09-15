@@ -19,7 +19,7 @@ while true; do
     cd "$folder" || exit
     
     # 执行命令
-    rm wallet.json && yarn cli wallet create && yarn cli wallet address
+    rm wallet.json && yarn cli wallet create && yarn cli wallet address && yarn cli wallet balances
     
     # 返回上一级目录
     cd ..
