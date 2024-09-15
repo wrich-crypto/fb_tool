@@ -19,7 +19,8 @@ while true; do
     cd "$folder" || exit
     
     # 执行命令
-    cat wallet.json | jq -r '.mnemonic'
+    cat wallet.json | jq -r '.mnemonic' && yarn cli wallet address && yarn cli wallet balances
+    
     
     # 返回上一级目录
     cd ..
